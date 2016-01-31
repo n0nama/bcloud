@@ -1,0 +1,19 @@
+{% extends "basis.html" %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+<div id="page-wrapper">
+    <div id="content" class="container-fluid content">
+        <div class="row">
+            {% for u in us %}
+            <div class="col-md-3 box">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <a href="/users/{{ user.get_username }}">{{ u.f_name }} {{ u.l_name }}</a> 
+                        {{ u.company }}</li></div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endblock %}

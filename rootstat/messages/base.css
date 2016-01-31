@@ -1,0 +1,90 @@
+li{
+     list-style-type: none;
+}
+
+#sidebar{
+    position: absolute;
+    height: 100%;
+    width: 210px;
+    border-right: 1px solid #dedede;
+}
+
+#main{
+    margin-left: 210px;
+    height: 100%;
+}
+
+#messages-menu{
+    padding: 0;
+}
+
+#messages-menu>li{
+    display: block;
+    position: relative;
+}
+
+#messages-menu>li>a{
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    min-height: 10px;
+    text-decoration: none;
+}
+
+#messages-menu>li>a:hover{
+    background-color: #dedede;
+}
+
+a.active{
+    background-color: #dedede;
+}
+
+#messages-send{
+    border-bottom: 1px solid #dedede;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#messages-send>a{
+    text-decoration: none;
+}
+
+.messages_checkbox{
+    -webkit-appearance: checkbox !important;
+}
+
+.check>div{
+    padding-left: 5px;
+}
+
+#messages_table table{
+    width: 100%;
+}
+
+#messages_table tr{
+    height: 30px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+#messages-top{
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+}
+
+.messages-li{
+    float: left;
+    margin-right: 10px;
+    height: 50px;
+    min-width: 50px;
+    max-width: 60px;
+    text-align: center;
+}
+
+.messages-li>a{
+    text-decoration: none;
+}

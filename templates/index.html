@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="fsvs" lang="en">
+<title>BUSINESS CLOUD</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+      <link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+
+      <link href='http://fonts.googleapis.com/css?family=Noto+Sans&subset=cyrillic-ext,latin,cyrillic' rel='stylesheet' type='text/css'>
+      <link href="{% static 'css/auth.css' %}" rel="stylesheet">
+
+      <link href="{% static 'css/fsvs.css' %}" rel="stylesheet">
+      <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+      <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+      <script src="{% static 'js/fsvs.js' %}"></script>
+    <body>
+        <div id="fsvs-body">
+            <div class="slide">ab</div>
+            <div class="slide">ag</div>
+            <div class="slide"><div id="top-panel" class="col-xs-12 col-sm-8 col-sm-offset-2"><a href="/login">LOGIN</div></div>
+        </div>
+        
+    </body>
+</html>
+<script type="text/javascript">
+    $(document).ready( function() {
+        var slider = $.fn.fsvs({
+            speed : 300,
+            bodyID : 'fsvs-body',
+            selector : '> .slide',
+            mouseSwipeDisance : 2000,
+            afterSlide : function(){},
+            beforeSlide : function(){},
+            endSlide : function(){},
+            mouseWheelEvents : true,
+            mouseDragEvents : true,
+            touchEvents : true,
+            arrowKeyEvents : true,
+            pagination : true,
+            nthClasses : false,
+            detectHash : false
+    });
+    //slider.slideUp();
+    //slider.slideDown();
+    //slider.slideToIndex( index );
+});
+</script>

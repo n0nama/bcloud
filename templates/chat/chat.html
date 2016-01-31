@@ -1,0 +1,102 @@
+{% extends "basis.html" %}
+{% load js %}
+{% load staticfiles %}
+{% block extend_header %}
+    <script src="{% static 'chat/sockjs.min.js' %}"></script>
+    <script type="text/javascript">
+        var username = {{ username | js}};
+
+        function get_history(room_id){
+            close_socket();
+            if ($('.message:last').html()!=undefined){
+                var last_message=$('.message:last').html();
+            }
+            else{
+                var last_message='';
+            }
+        
+            $.post(
+                '{% url 'history' %}',
+                {'room_id':room_id, 'last_message':last_message},
+                function (data){
+                    if (data!=''){
+                        $('#chat-history-list').append(data);
+                        var objDiv = document.getElementById("chat-history");
+                        objDiv.scrollTop = objDiv.scrollHeight;
+                    }
+                }
+                )
+        };
+        
+        function send(){
+            var text = document.getElementById('input').value;
+            last = text;
+            if (text != '' && text!='\n') {
+                $('#input').val('');
+                $.post(
+                    '{% url 'send' %}', {room_id: id, message: text}
+                );
+            }
+        };
+    </script>
+    <script type="text/javascript" src="{% static 'chat/scripts.js' %}"></script>
+{% endblock %}
+
+{% block main_content %}
+    <div id="page-wrapper">
+        <div class="content">
+			<div class="col-lg-12 pad">
+				<div class="ui fluid action input">
+					<input type="text" placeholder="Поиск...">
+					<div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+					<div class="ui icon primary button rght">Поиск <i class="search icon"></i></div>
+				</div>
+			</div>
+			<div class="col-lg-12 mrg">
+				<div class="ui large secondary menu">
+					<div class="item"><a class="ui primary button" href="#">Создать группу</a></div>
+					<a href="#" class="active item">
+						Чат
+					</a>
+					<a href="#" class="item">
+						История
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-12 mrg">
+				<div class="ui segment padless">
+				<div class="col-lg-3 pull-right padless">
+					<div id="contacts">
+                		<div id="contacts-header">
+                    		<p>Список контактов</p>
+                		</div>
+                		<ul id="contacts-list">
+                		{% for dialog in dialogs %}
+                    		<li class="contact" id="group" room_id="{{ dialog.room_id }}">{{ dialog.room_name }}</li>
+                		{% endfor %}
+                		{% for friend, id in friends.items %}
+                    		<li class="contact" id="friend" room_id="{{ id }}">{{ friend }}</li>
+                		{% endfor %}
+                		</ul>
+            		</div>
+				</div>
+				<div class="col-lg-9">
+            		<div id="history-input">
+                		<div id="chat-history">
+                    		<ul id="chat-history-list">
+
+                    		</ul>
+               			</div>
+					</div>
+                	<div id="input-field">
+                    	<button id="send">Send</button>
+                    	<div id="div_input">
+                        	<textarea id="input" placeholder="Напишите сообщение..."></textarea>
+                    	</div>
+           			</div>
+				</div>
+				</div>
+			</div>
+        </div>
+    </div>
+{% endblock %}

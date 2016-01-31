@@ -1,0 +1,33 @@
+{% extends "basis.html" %}
+{% load staticfiles %}
+{% block title %}Входящие{% endblock %}
+{% block extend_header %}
+    <script type="text/javascript">
+        var urls = {
+            'compose': '{% url 'messages_compose' %}',
+            'inbox': '{% url 'messages_inbox' %}',
+            'outbox': '{% url 'messages_outbox' %}',
+            'favorite': '{% url 'messages_favorite' %}',
+            'draft': '{% url 'messages_draft' %}',
+            'trash': '{% url 'messages_trash' %}'
+        };
+        var current_page = '{{ current }}'
+    </script>
+    <link rel="stylesheet" href="{% static 'css/messages.css'%}" />
+    <script type="text/jsx" src="{% static 'app/messages.jsx' %}" ></script>
+{% endblock %}
+{% block main_content %}
+    <div id="page-wrapper">
+        <div class="content">
+            <div class="col-lg-12 pad">
+                <div class="ui fluid action input">
+                    <input type="text" placeholder="Поиск...">
+                    <div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+                    <div class="ui icon primary button rght">Поиск<i class="search icon"></i></div>
+                </div>
+            </div>
+            <div class="col-lg-12 mrg"  id="messages_box">
+            </div>
+        </div>
+    </div>
+{% endblock %}

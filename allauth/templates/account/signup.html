@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% load url from future %}
+{% load i18n %}
+
+{% block head_title %}{% trans "Signup" %}{% endblock %}
+
+{% block content %}
+<div id="login_page_bck">
+	<div class="ui page grid">
+		<div class="sixteen wide mobile eight wide tablet six wide computer four wide widescreen column centered">
+			<div id="login_form" class="ui form segment center">
+					<h2 class="ui center aligned header">{% trans "Sign Up" %}</h2>
+					<hr></hr>
+					<div id="errors">
+						{% if form.errors %}
+							{% for field in form %}
+        						{% for error in field.errors %}
+            						<p class="text-danger er_p">{{ error|escape }}</p>
+								{% endfor %}
+    						{% endfor %}
+    						{% for error in form.non_field_errors %}
+        						<p class="text-danger er_p">{{ error|escape }}</p>
+							{% endfor %}
+						{% endif %}
+					</div>
+
+
+					<form role="form" id="signup_form" method="post" action="{% url 'account_signup' %}">
+					{% csrf_token %}
+						<div class="field">
+							<div class="ui big input">{{ form.username }}</div>
+						</div>
+						<div class="field">
+							<div class="ui big input">{{ form.email }}</div>
+						</div>
+						<div class="field">
+							<div class="ui big input">{{ form.password1 }}</div>
+						</div>
+						<div class="field">
+							<div class="ui big input">{{ form.password2 }}</div>
+						</div>
+						<div class="field">
+							<button class="fluid ui primary big button" type="submit">{% trans "Sign Up" %}</button>
+						</div>
+						<div class="field">
+							<a href="{{ login_url }}" class="fluid ui big button">{% trans "Sign In" %}</a>
+						</div>
+						<hr></hr>
+					</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

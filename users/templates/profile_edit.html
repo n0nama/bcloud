@@ -1,0 +1,129 @@
+{% extends "basis.html" %}
+{%block title%}Редактирование профайла{%endblock%}
+{% block main_content%}
+{% if user.is_authenticated %}
+<div id="page-wrapper">
+	<div class="ui vertically padded page grid">
+		<input type="text" class="ui hidden" id="uname" name="uname" value="{{ user.username }}">
+		<form class="row ui form segment" id="profile_form" method="POST" action="" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="right floated right aligned two wide column"><button type="submit" name="profile_form" class="circular ui icon basic button"><i class="save icon"></i></button></div>
+			<div class="five wide computer fifteen wide tablet fifteen wide mobile center aligned  column">
+				<div id="base_avatar">
+					<img src="{{ MEDIA_URL }}{{ request.user.profile.avatar.url }}" class="ui centered circular image">
+				</div>
+				<div class="cropped centered"></div>
+				<input id="u_avatar" name="u_avatar" type="text" class="ui hidden">
+				<input id="id_avatar" maxlength="127" name="avatar" type="text" value="{{ user.profile.avatar.url}}" class="hidden">
+				<button type="button" class="ui primary button" id="#avatar_crop">Загрузить</button>
+			</div>
+			<div class="nine wide computer fifteen wide tablet fifteen wide mobile left aligned column">
+				<div class="required field">
+					<label>Имя</label>
+					<input class="ui input" id="id_f_name" maxlength="30" name="f_name" type="text" value="{{ request.user.profile.f_name}}">
+				</div>
+				<div class="required field">
+					<label>Фамилия</label>
+					<input class="ui input" id="id_l_name" maxlength="30" name="l_name" type="text" value="{{ request.user.profile.l_name}}">
+				</div>
+				<div class="required field">
+					<label>Age</label>
+					<div class="three fields">
+						<div class="field mbless">
+							<input class="ui input" id="id_bd_day" maxlength="2" name="bd_day" type="text" value="{{ request.user.profile.bd_day}}">
+						</div>
+						<div class="field mbless">
+							<select id="id_bd_month" name="bd_month" class="ui compact dropdown">
+								<option value="">Month</option>
+								<option value="01">Январь</option>
+								<option value="02">Февраль</option>
+								<option value="03">Март</option>
+								<option value="04">Апрель</option>
+								<option value="05">Май</option>
+								<option value="06">Июнь</option>
+								<option value="07">Июль</option>
+								<option value="08">Август</option>
+								<option value="09">Сентябрь</option>
+								<option value="10">Октябрь</option>
+								<option value="11">Ноябрь</option>
+								<option value="12">Декабрь</option>
+							</select>
+						</div>
+						<div class="field mbless">
+							<input class="ui input" id="id_bd_year" maxlength="30" name="bd_year" type="text" value="{{ request.user.profile.bd_year}}">
+						</div>
+					</div>
+				</div>
+				<div class="required field">
+					<label>City</label>
+					<input class="ui input" id="id_city" maxlength="255" name="city" type="text" value="{{ request.user.profile.city}}">
+				</div>
+				<div class="field">
+					<div class="ui right labeled input">
+						<input class="ui input" id="id_skills" maxlength="255" name="skills" type="text" value="{{ request.user.profile.skills}}">
+						<div class="ui tag label">
+							Skills
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label>Bill Rate</label>
+					<input class="ui input" id="id_bill_rate" maxlength="255" name="bill_rate" type="text" value="{{ request.user.profile.bill_rate}}">
+				</div>
+				<div class="field">
+					<label>Website</label>
+					<input class="ui input" id="id_website" maxlength="255" name="website" type="text" value="{{ request.user.profile.website}}">
+				</div>
+				<div class="field">
+					<label>Company</label>
+					<input class="ui input" rows="20" id="id_company" maxlength="30" name="company" type="text" value="{{ request.user.profile.company}}">
+				</div>
+			</div>
+			<div class="ui horizontal divider"></div>
+			<div class="fourteen wide left aligned padded column">
+				<div class="fluid field">
+					<label>О себе:</label>
+					<textarea id="id_about" name="about">{{ request.user.profile.about }}</textarea>
+				</div>
+			</div>
+			<div class="ui horizontal divider"></div>
+			<div class="right floated right aligned two wide column"><div class="circular ui icon basic button"><i class="browser icon"></i></div></div>
+		</form>
+	</div>
+</div>
+{% endif %} {% endblock%} {% block scripts %}
+<script type="text/javascript">
+	$("#id_bd_month").dropdown('set selected', {{request.user.profile.bd_month}});
+	$('#avatar_crop').on('click', function(){
+        $('#av_change').modal('show');
+    });
+	
+</script>
+{% endblock %}
+{% block modals %}
+<div id="av_change" class="ui modal">
+  <i class="close icon"></i>
+  <div class="header">
+    Profile Picture
+  </div>
+  <div class="content">
+    <div class="ui medium image">
+      <img src="/images/avatar/large/chris.jpg">
+    </div>
+    <div class="description">
+      <div class="ui header">We've auto-chosen a profile image for you.</div>
+      <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+      <p>Is it okay to use this photo?</p>
+    </div>
+  </div>
+  <div class="actions">
+    <div class="ui black button">
+      Nope
+    </div>
+    <div class="ui positive right labeled icon button">
+      Yep, that's me
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+</div>
+{% endblock %}

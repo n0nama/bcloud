@@ -1,0 +1,48 @@
+{% extends "basis.html" %}
+{% block main_content%}
+
+{% load highlight %}
+{% load more_like_this%}
+
+<h2>Поиск</h2>
+
+    <form method="get" action=".">
+        <table>
+            {{ form.as_table }}
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Найти">
+                </td>
+            </tr>
+        </table>
+
+        {% if query %}
+            <h3>Результаты поиска</h3>
+			
+            {% for result in page.object_list %}
+                <p>
+                    <table>
+						<tr><td><a href="/users/{{ result.object.user }}"> {{ result.object.f_name }} {{result.object.l_name}} {{hu}}</td></tr> </a> 
+						<tr><td>Навыки: </td></tr>
+						<tr><td>Город: {{ result.object.city }} </td></tr>
+						<tr><td><a href="/users/{{ result.object.user }}"> {% highlight result.text with query html_tag "b" max_length 15 %}</td></tr> </a>
+
+					</table>
+                </p>
+            {% empty %}
+                <p>No results found.</p>
+            {% endfor %}
+
+            {% if page.has_previous or page.has_next %}
+                <div>
+                    {% if page.has_previous %}<a href="?q={{ query }}&amp;page={{ page.previous_page_number }}">{% endif %}&laquo; Previous{% if page.has_previous %}</a>{% endif %}
+                    |
+                    {% if page.has_next %}<a href="?q={{ query }}&amp;page={{ page.next_page_number }}">{% endif %}Next &raquo;{% if page.has_next %}</a>{% endif %}
+                </div>
+            {% endif %}
+        {% else %}
+            {# Show some example queries to run, maybe query syntax, something else? #}
+        {% endif %}
+    </form>
+{% endblock %}

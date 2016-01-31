@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account %}
+{% load url from future %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+{% block sidebar %}{% endblock %}
+{% block content %}
+<div id="login_page_bck">
+	<div class="ui page grid">
+		<div class="sixteen wide mobile eight wide tablet six wide computer column centered">
+			<div id="login_form" class="ui form segment center">
+					<h2 class="ui center aligned header">{% trans "Sign In" %}</h2>
+					<hr></hr>
+				<div id="errors">{% for error in form.non_field_errors %}<p class="text-danger er_p">{{ error|escape }}</p>{% endfor %}</div>	
+					<form role="form" method="POST" action="{% url 'account_login' %}">
+					{% csrf_token %}
+						<div class="field">
+							<div class="ui left icon big input"><i class="user icon"></i>{{ form.login }}</div>
+						</div>
+							<!--<div id="errors_s" class="text-center">{% for error in form.login.errors %}
+									<h6><p class="text-danger er_p">{{ error|escape }}</p></h6>{% endfor %}</div>-->
+						<div class="field">
+							<div class="ui left icon big input"><i class="lock icon"></i>{{ form.password }}</div>
+						</div>
+							<!--<div id="errors_s" class="text-center">{% for error in form.password.errors %}<h6><p class="text-danger er_p">
+								{{ error|escape }}</p></h6>{% endfor %}</div>-->
+						<div class="inline field">
+							<div class="ui checkbox">
+								{{ form.remember }}
+								<label for="id_remember">{% trans "Remember Me" %}</label>
+							</div>
+						</div>
+						<div class="field">
+							<button class="fluid ui primary big button" type="submit">{% trans "Sign In" %}</button>
+						</div>
+						<div class="field">	
+							<a href="{{ signup_url }}" class="fluid ui big button">{% trans "Sign Up" %}</a>
+						</div>
+						
+						<div class="field">
+							<hr></hr>
+						</div>
+			
+						<div class="field text-center">
+							<a class="ui circular facebook icon button">
+  								<i class="facebook icon"></i>
+							</a>
+							<a class="ui circular twitter icon button">
+  								<i class="twitter icon"></i>
+							</a>
+							<a class="ui circular linkedin icon button">
+ 								<i class="linkedin icon"></i>
+							</a>
+							<a class="ui circular google plus icon button">
+  								<i class="google plus icon"></i>
+							</a>
+						</div>
+					</form>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,4 @@
+{{ object.f_name }}
+{{ object.l_name }}
+{{ object.skills }}
+{{ object.city }}

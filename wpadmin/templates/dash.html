@@ -1,0 +1,148 @@
+{% extends "admin/index.html" %}
+{% load i18n admin_static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" type="text/css" href="{% static "admin/css/dashboard.css" %}" />{% endblock %}
+
+{% block coltype %}colMS{% endblock %}
+
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+
+{% block breadcrumbs %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+<div class="ui two column divided grid">
+    <div class="stretched row">
+    <div class="ten wide stretched column">
+        <div id="stat" class="ui raised segment">
+            <div id="widgetmenu" class="ui icon secondary pointing menu">
+                <a id="userstat" class="item">
+                    <i class="users icon"></i>
+                </a>
+                <a id="bugstat" class="item">
+                    <i class="bug icon"></i>
+                </a>
+                <a id="serverstat" class="item">
+                    <i class="server icon"></i>
+                </a>
+            </div>
+            <div id="chartwrapper">
+                <div id="userschart"></div>
+            </div>
+            <div id="errorlog">ERRORS</div>
+            <div id="serverpref">
+                <div class="ui teal progress" id="ramperc" data-percent = {{ ram | floatformat:"0" }} >
+                  <div class="bar"></div>
+                  <div class="label">RAM</div>
+                </div>
+                <div class="ui teal progress" id="cpuperc" data-percent = {{ cpu | floatformat:"0" }} >
+                  <div class="bar"></div>
+                  <div class="label">CPU</div>
+                </div>
+                <div class="ui teal progress" id="sddperc" data-percent = {{ sdd | floatformat:"0" }} >
+                  <div class="bar"></div>
+                  <div class="label">Disk usage</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui raised segment">
+            {% for c in comments %}
+                <h3 class="ui dividing header mrbless">
+                <a href="news/comment/{{c.id}}">{{c.new.title}}</a>
+                </h3>
+                <div class="content">
+                    <small>{{c.pub_date}} от {{c.author.profile.f_name}} {{c.author.profile.l_name}}</small>
+                    <div class="ui hidden divider mrlo"></div>
+                    <p>{{c.text}}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div id="ticketarea" class="six wide column">
+        <div class="ui raised segment">
+            <h3 class="ui center aligned dividing header">тикеты</h3>
+            <div id="ticketmenu" class="ui three item secondary pointing menu">
+                <a id="newt" class="ui active item">
+                    ОТКРЫТЫЕ
+                </a>
+                <a id="myt" class="item">
+                    МОИ
+                </a>
+                <a id="ct" class="item">
+                    ЗАКРЫТЫЕ
+                </a>
+            </div>
+            <div id="newtickets" class="sixteen wide column">
+            {% for t in ntic %}
+                <h3 class="ui dividing header mrbless">
+                <a href="ticketracker/ticket/{{t.id}}">{{t.title}}</a>
+                </h3>
+                <div class="content">
+                    <small>{{t.open_date}} от {{t.author.profile.f_name}} {{t.author.profile.l_name}}</small>
+                    <div class="ui hidden divider mrlo"></div>
+                    <p>{{t.body}}</p>
+                </div>
+            {% endfor %}
+            </div>
+            <div id="mytickets" class="sixteen wide column">
+            {%for t in mytic%}
+                <h3 class="ui dividing header mrbless">
+                <a href="ticketracker/ticket/{{t.id}}">{{t.title}}</a>
+                </h3>
+                <div class="content">
+                    <small>{{t.open_date}} от {{t.author.profile.f_name}} {{t.author.profile.l_name}}</small>
+                    <div class="ui hidden divider mrlo"></div>
+                    <p>{{t.body}}</p>
+                </div>
+            {%endfor%}
+            </div>
+            <div id="ctickets" class="sixteen wide column">
+            {%for t in ctic%}
+                <h3 class="ui dividing header mrbless">
+                <a href="ticketracker/ticket/{{t.id}}">{{t.title}}</a>
+                </h3>
+                <div class="content">
+                    <small>{{t.open_date}} от {{t.author.profile.f_name}} {{t.author.profile.l_name}}</small>
+                    <div class="ui hidden divider mrlo"></div>
+                    <p>{{t.body}}</p>
+                </div>
+            {%endfor%}
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<!--<div id="content-related">
+    <div class="module" id="recent-actions-module">
+        <h2>{% trans 'Recent Actions' %}</h2>
+        <h3>{% trans 'My Actions' %}</h3>
+            {% load log %}
+            {% get_admin_log 25 as admin_log for_user user %}
+            {% if not admin_log %}
+            <p>{% trans 'None available' %}</p>
+            {% else %}
+            <ul class="actionlist">
+            {% for entry in admin_log %}
+            <li class="{% if entry.is_addition %}addlink{% endif %}{% if entry.is_change %}changelink{% endif %}{% if entry.is_deletion %}deletelink{% endif %}">
+                {% if entry.is_deletion or not entry.get_admin_url %}
+                    {{ entry.object_repr }}
+                {% else %}
+                    <a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a>
+                {% endif %}
+                <br/>
+                {% if entry.content_type %}
+                    <span class="mini quiet">{% filter capfirst %}{{ entry.content_type }}{% endfilter %}</span>
+                {% else %}
+                    <span class="mini quiet">{% trans 'Unknown content' %}</span>
+                {% endif %}
+            </li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+    </div>
+</div>-->
+{% endblock %}

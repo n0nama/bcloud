@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf8">
+    <title>{% block title %}Тикет Трекер{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<table>
+{%if user.is_authenticated %}
+<tr><td><a href='/accounts/logout'>Выйти</a></td></tr>
+{%else%}
+<tr><td><a href='/accounts/login'>Зайти</a></td></tr>
+<tr><td><a href='/accounts/signup/'>Зарегестрироваться</a></td></tr>
+{%endif%}
+{%if user.is_authenticated %}
+<tr><td><a href='/tickets/add_ticket'>Сообщить о проблеме</a></td></tr>
+{% else %}
+<tr><td><a href='/accounts/login'><p>Зайти, чтобы сообщить о проблеме</p></a></td></tr>
+{% endif %}
+</table>
+<!---
+<form action='/tickets/all/' method="post">
+    {% csrf_token %}
+    {{ status_form }}
+    <input type="submit" value="Отобразить" />
+</form>
+
+  {% if tickets.count > 0 %}
+    {% for ticket in tickets %}
+      <table>
+	  <tr><p><td><a href='/tickets/get/{{ticket.id}}'>{{ticket.id}}: {{ticket.title}}</a> </td></tr>
+      <tr><td><b>Статус:</b> {{ticket.get_status_display}}</td></tr>
+      </p>
+      </table>
+    {% endfor %}
+  {% else %}
+    <h1>Проблем нет!</h1>
+  {% endif %}
+-->
+
+   	
+{% endblock %}
+</body>
+</html>

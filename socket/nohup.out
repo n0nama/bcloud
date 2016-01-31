@@ -1,0 +1,1498 @@
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 11ms 200
+GET /chat_socket/868/4hqp9mxv/websocket 3ms (unfinished)
+y
+close
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 3ms 200
+GET /chat_socket/900/rhh2vifj/websocket 2ms (unfinished)
+y
+close
+GET /chat_socket/info 11ms 200
+GET /chat_socket/278/05bk0wia/websocket 33ms (unfinished)
+y
+close
+GET /chat_socket/info 35ms 200
+GET /chat_socket/585/90lkf7g8/websocket 4ms (unfinished)
+y
+close
+GET /chat_socket/info 294ms 200
+GET /chat_socket/363/7duhyuzi/websocket 749ms (unfinished)
+y
+POST /chat_socket/363/oqkzjt6e/xhr_streaming 698ms (unfinished)
+y
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 3ms 200
+GET /chat_socket/472/35fvgbux/websocket 3ms (unfinished)
+y
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/998/xl5f8zcw/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/991/u_5ywlrw/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/788/gglpvs95/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 10ms 200
+GET /chat_socket/120/kiszqczc/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/312/ucmm4jw7/websocket 4ms (unfinished)
+y
+close
+GET /chat_socket/info 11ms 200
+GET /chat_socket/693/_tvtgdgw/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/416/xq_hnlsv/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 1ms 200
+GET /chat_socket/239/7gp10v5h/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/827/_4_1pcb3/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/913/z7ilj79i/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/903/myf85day/websocket 1ms (unfinished)
+y
+GET /chat_socket/info 13ms 200
+GET /chat_socket/952/c0bcc8ua/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/597/zzvbl41b/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/856/226z5bln/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/273/jqsaw7r4/websocket 6ms (unfinished)
+y
+close
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/903/_kk3jl8b/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 1ms 200
+GET /chat_socket/194/urh38iqk/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 8ms 200
+GET /chat_socket/034/n2vm46md/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/573/4wwm7rg5/websocket 1ms (unfinished)
+y
+GET /chat_socket/info 0ms 200
+GET /chat_socket/877/pa_43jx3/websocket 8ms (unfinished)
+y
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/296/2v5v_inb/websocket 1ms (unfinished)
+y
+GET /chat_socket/info 0ms 200
+GET /chat_socket/231/wn7lm8uj/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 5ms 200
+GET /chat_socket/516/2es4lryc/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/404/72tjwf_j/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/640/_0gatlok/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 3ms 200
+GET /chat_socket/165/09rmhqvi/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/873/yyqqjddp/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 7ms 200
+GET /chat_socket/229/w43rr5c8/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/476/ksl5a3v3/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/988/v_1ek3d0/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/835/c_av9kyn/websocket 0ms (unfinished)
+y
+close
+close
+GET /chat_socket/info 2ms 200
+GET /chat_socket/596/884y3lmu/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/816/9jp7gkld/websocket 0ms (unfinished)
+y
+close
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 2ms 200
+GET /chat_socket/421/ixmpqx2c/websocket 2ms (unfinished)
+y
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:196:24)
+    at Socket.<anonymous> (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:106:14)
+    at Socket.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:442:13)
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 3ms 200
+GET /chat_socket/info 1ms 200
+GET /chat_socket/067/evmdn407/websocket 2ms (unfinished)
+y
+close
+close
+GET /chat_socket/info 1ms 200
+GET /chat_socket/817/7bxwquun/websocket 1ms (unfinished)
+y
+{"date": "10:10", "text": "asdasd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+{"date": "10:10", "text": "qqq", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/062/4gclfw21/websocket 1ms (unfinished)
+y
+{"date": "10:12", "text": "asdas", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 2ms 200
+GET /chat_socket/009/poqlz76k/websocket 0ms (unfinished)
+y
+{"date": "10:14", "text": "asda", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/638/dpyjw2px/websocket 0ms (unfinished)
+y
+{"date": "10:15", "text": "asd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/033/_qe_2p3r/websocket 1ms (unfinished)
+y
+{"date": "10:17", "text": "asdad", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 1ms 200
+GET /chat_socket/335/r8kehiuj/websocket 0ms (unfinished)
+y
+{"date": "10:17", "text": "asdad", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/211/wpxbi18a/websocket 0ms (unfinished)
+y
+{"date": "10:19", "text": "asdad", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/551/z5b2gjjr/websocket 0ms (unfinished)
+y
+{"date": "10:20", "text": "asd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/918/xghgzaxo/websocket 0ms (unfinished)
+y
+{"date": "10:20", "text": "asd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/588/r10sfdbb/websocket 0ms (unfinished)
+y
+{"date": "10:20", "text": "asd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/593/6q227kkn/websocket 1ms (unfinished)
+y
+{"date": "10:22", "text": "asdad", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 0ms 200
+GET /chat_socket/385/syxiclzf/websocket 2ms (unfinished)
+y
+{"date": "10:22", "text": "asdasd", "sender": "profx5", "name": "\u0420\u043e\u043c\u0430"}
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/345/j27tcc15/websocket 1ms (unfinished)
+y
+close
+GET /chat_socket/info 8ms 200
+GET /chat_socket/460/nmep53dz/websocket 0ms (unfinished)
+y
+close
+GET /chat_socket/info 11ms 200
+GET /chat_socket/918/se7d_r7i/websocket 2ms (unfinished)
+y
+close
+GET /chat_socket/info 6ms 200
+GET /chat_socket/954/4nap02xi/websocket 3ms (unfinished)
+y
+close
+SockJS v0.3.11 bound to "/chat_socket"
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 94ms 200
+GET /chat_socket/info 5ms 200
+GET /chat_socket/134/98zvwfdd/websocket 10ms (unfinished)
+GET /chat_socket/917/9wcwv2c8/websocket 28ms (unfinished)
+GET /chat_socket/info 35ms 200
+GET /chat_socket/888/h9fcazov/websocket 4ms (unfinished)
+GET /chat_socket/info 10ms 200
+GET /chat_socket/727/ctttd30g/websocket 3ms (unfinished)
+GET /chat_socket/info 13ms 200
+GET /chat_socket/058/arqipvpt/websocket 6ms (unfinished)
+GET /chat_socket/info 8ms 200
+GET /chat_socket/719/ulrkmsfq/websocket 13ms (unfinished)
+GET /chat_socket/info 8ms 200
+GET /chat_socket/509/wfvz93pp/websocket 2ms (unfinished)
+GET /chat_socket/info 7ms 200
+GET /chat_socket/976/546vh96u/websocket 3ms (unfinished)
+GET /chat_socket/info 7ms 200
+GET /chat_socket/841/vzsjxf1e/websocket 3ms (unfinished)
+GET /chat_socket/info 15ms 200
+GET /chat_socket/info 21ms 200
+GET /chat_socket/485/bsf2a9_g/websocket 2ms (unfinished)
+GET /chat_socket/info 6ms 200
+GET /chat_socket/546/q9ilsz8l/websocket 2ms (unfinished)
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 3ms 200
+GET /chat_socket/385/694l9pj6/websocket 2ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/011/34ftufps/websocket 1ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/067/xpgvb1nn/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/484/6ceyxb29/websocket 1ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/463/6zp5lay9/websocket 1ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/276/wblq1gro/websocket 1ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/877/0nzkuun2/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/216/8kppajqz/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/724/4uorjtu2/websocket 1ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/696/uy1afuyo/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/437/dm_huxgy/websocket 0ms (unfinished)
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 2ms 200
+GET /chat_socket/992/vxl_xblz/websocket 1ms (unfinished)
+u6zgd4DWaRB6JxeA
+u6zgd4DWaRB6JxeA
+Q
+GET /chat_socket/info 0ms 200
+GET /chat_socket/440/b6ezs8ol/websocket 0ms (unfinished)
+oZk0RNCO6NX9bdK9
+oZk0RNCO6NX9bdK9
+Q
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 3ms 200
+GET /chat_socket/402/2tti66d9/websocket 2ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/411/v_vfb62a/websocket 0ms (unfinished)
+9rBzf11KgprNsbtd
+9rBzf11KgprNsbtd
+Q
+GET /chat_socket/info 0ms 200
+GET /chat_socket/194/z_k9n__n/websocket 0ms (unfinished)
+fizV7njiI0UqeaDx
+fizV7njiI0UqeaDx
+Q
+GET /chat_socket/info 5ms 200
+GET /chat_socket/171/ly7bsgsk/websocket 1ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/637/xacyprgj/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/408/szw7p72v/websocket 0ms (unfinished)
+GleBzxXUr0VymFXP
+GleBzxXUr0VymFXP
+Q
+GET /chat_socket/info 8ms 200
+GET /chat_socket/606/i3a5uo27/websocket 0ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/798/hagqwimw/websocket 0ms (unfinished)
+GET /chat_socket/info 1ms 200
+GET /chat_socket/info 0ms 200
+GET /chat_socket/709/8peou549/websocket 1ms (unfinished)
+GET /chat_socket/875/j4ohqngw/websocket 0ms (unfinished)
+ibYzZIRVPnueYBxF
+ibYzZIRVPnueYBxF
+Q
+
+/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:834
+        throw new Error("Connection in subscriber mode, only subscriber comman
+              ^
+Error: Connection in subscriber mode, only subscriber commands may be used
+    at RedisClient.send_command (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:834:15)
+    at RedisClient.(anonymous function) (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:991:25)
+    at SockJSConnection.<anonymous> (/home/bcloud/preprod/bcloud/chat/socket/chat_socket.js:17:20)
+    at SockJSConnection.emit (events.js:95:17)
+    at Session.didMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/transport.js:246:25)
+    at WebSocketReceiver.didMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/trans-websocket.js:99:40)
+    at null.<anonymous> (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/trans-websocket.js:70:24)
+    at emit (events.js:95:17)
+    at EventTarget.dispatchEvent (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js:24:10)
+    at instance._receiveMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api.js:129:10)
+SockJS v0.3.11 bound to "/chat_socket"
+GET /chat_socket/info 14ms 200
+GET /chat_socket/info 1ms 200
+GET /chat_socket/640/cqnr7pxt/websocket 6ms (unfinished)
+NDOeKpUCekGskfEO
+NDOeKpUCekGskfEO
+Q
+GET /chat_socket/info 7ms 200
+GET /chat_socket/491/lqpc2iw5/websocket 0ms (unfinished)
+v7TolHEnsEBaKkPC
+v7TolHEnsEBaKkPC
+Q
+GET /chat_socket/info 25ms 200
+GET /chat_socket/202/w6j3qed8/websocket 24ms (unfinished)
+q1mb3V46ejPrtz7P
+q1mb3V46ejPrtz7P
+Q
+GET /chat_socket/info 32ms 200
+GET /chat_socket/903/av2kgty_/websocket 5ms (unfinished)
+SaHl2NsjD9P8WdUh
+SaHl2NsjD9P8WdUh
+Q
+GET /chat_socket/info 8ms 200
+GET /chat_socket/315/a7z27ywu/websocket 48ms (unfinished)
+AQcUb1YnlLRGjOUn
+AQcUb1YnlLRGjOUn
+Q
+GET /chat_socket/info 22ms 200
+GET /chat_socket/978/_565aok6/websocket 8ms (unfinished)
+WytKYDNm1AQcIAy2
+WytKYDNm1AQcIAy2
+Q
+GET /chat_socket/info 26ms 200
+GET /chat_socket/039/9w89qh5x/websocket 5ms (unfinished)
+sERfEyi0n8wJA0wn
+sERfEyi0n8wJA0wn
+Q
+GET /chat_socket/info 8ms 200
+GET /chat_socket/846/d274eb1f/websocket 26ms (unfinished)
+GET /chat_socket/info 34ms 200
+GET /chat_socket/840/iv4f43h7/websocket 31ms (unfinished)
+syBExfkFIPSVe6fo
+syBExfkFIPSVe6fo
+Q
+GET /chat_socket/info 167ms 200
+GET /chat_socket/107/vzujle1q/websocket 72ms (unfinished)
+GET /chat_socket/info 10ms 200
+GET /chat_socket/382/at_0d213/websocket 11ms (unfinished)
+GET /chat_socket/info 0ms 200
+GET /chat_socket/info 7ms 200
+GET /chat_socket/526/4n3ba0_j/websocket 0ms (unfinished)
+GET /chat_socket/497/wuwpmnhh/websocket 4ms (unfinished)
+TrZFyjkXPcsfnUGW
+TrZFyjkXPcsfnUGW
+Q
+
+/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:834
+        throw new Error("Connection in subscriber mode, only subscriber comman
+              ^
+Error: Connection in subscriber mode, only subscriber commands may be used
+    at RedisClient.send_command (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:834:15)
+    at RedisClient.(anonymous function) (/home/bcloud/preprod/bcloud/chat/socket/node_modules/redis/index.js:991:25)
+    at SockJSConnection.<anonymous> (/home/bcloud/preprod/bcloud/chat/socket/chat_socket.js:17:20)
+    at SockJSConnection.emit (events.js:95:17)
+    at Session.didMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/transport.js:246:25)
+    at WebSocketReceiver.didMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/trans-websocket.js:99:40)
+    at null.<anonymous> (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/lib/trans-websocket.js:70:24)
+    at emit (events.js:95:17)
+    at EventTarget.dispatchEvent (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api/event_target.js:24:10)
+    at instance._receiveMessage (/home/bcloud/preprod/bcloud/chat/socket/node_modules/sockjs/node_modules/faye-websocket/lib/faye/websocket/api.js:129:10)
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module '/home/bcloud/preprod/bcloud/socket/notif_socket.js'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Function.Module.runMain (module.js:497:10)
+    at startup (node.js:119:16)
+    at node.js:929:3
+SockJS v0.3.11 bound to "/notf_socket"
+GET /notf_socket/info 2ms 200
+GET /notf_socket/135/zuhugqev/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/770/o83313v0/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/175/svw6_xs_/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/059/n1vf83rv/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/520/mmkzshey/websocket 5ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/843/xlkksqs8/websocket 9ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/703/3iwi88me/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/759/jsk3963_/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/898/a6xvdm8i/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/047/hl9ib7pm/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/716/2uh9zhse/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 10ms 200
+GET /notf_socket/802/fvjleywe/websocket 4ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 11ms 200
+GET /notf_socket/786/emjcptzu/websocket 3ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/019/ej12q6jl/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/664/z8716y86/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 26ms 200
+GET /notf_socket/218/o5ew4npm/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/565/m17815_b/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/116/oocn98cr/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/257/3g6p0ygd/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 11ms 200
+GET /notf_socket/370/o3_rj7sz/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 4ms 200
+GET /notf_socket/328/2lbrjr16/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 11ms 200
+GET /notf_socket/403/j9vqxp0a/websocket 11ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/669/5qb2y6ng/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/522/rde0xhgm/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 12ms 200
+GET /notf_socket/211/v9ot4ke4/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/566/jp9kkt8u/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 10ms 200
+GET /notf_socket/423/0vah160c/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/855/8fwk8z9c/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/163/t3hs44qv/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/753/l3iyzvjr/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/350/5nmuw7rm/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/005/wrc1e5oa/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/144/hjlurgb1/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/536/zbb6z0ip/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/040/crgz9q6a/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/625/sen0xfvh/websocket 4ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/141/zt4y1n9k/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/info 0ms 200
+GET /notf_socket/484/fpyf8in5/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/735/5dfak3gl/websocket 6ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/261/lhloyqmx/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/098/04n_bbte/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/169/9oebhdzz/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/983/8x6fbye7/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/353/fvk10vk5/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/691/j6ruqozy/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/860/p_ig1vol/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/516/ma2s85g2/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/743/rxbvyd44/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/618/mhkix5lg/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/586/r4ngjke6/websocket 2ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 8ms 200
+GET /notf_socket/276/1t6knazl/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/149/ct0kmyos/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/396/06yi8pi2/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/490/1vjete6b/websocket 6ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/620/vxxwp4xq/websocket 5ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/622/603ajgki/websocket 4ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 7ms 200
+GET /notf_socket/528/8wfx7o0y/websocket 29ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 9ms 200
+GET /notf_socket/322/87wlif9d/websocket 4ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 5ms 200
+GET /notf_socket/972/mmcuy58a/websocket 3ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 18ms 200
+GET /notf_socket/508/btwzvfr2/websocket 5ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 40ms 200
+GET /notf_socket/599/34q_xgs8/websocket 16ms (unfinished)
+14
+disconnect
+SockJS v0.3.11 bound to "/notf_socket"
+GET /notf_socket/info 3ms 200
+GET /notf_socket/744/ppmxjp56/websocket 2ms (unfinished)
+14
+SockJS v0.3.11 bound to "/notf_socket"
+SockJS v0.3.11 bound to "/notf_socket"
+GET /notf_socket/info 3ms 200
+GET /notf_socket/781/3k6ik28y/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/162/vejus12_/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/822/zfkyodiq/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/444/dcmkxmzv/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/540/v8f8i2l1/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/998/p2n0ix3s/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/230/njqr2sk7/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/543/2xk49igq/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/144/fnfbouh_/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/111/56tsyrrj/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/431/vc8f0009/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/839/2lc_r20c/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/856/kq6gjv97/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/059/k5r_jj2s/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/049/uqren9xv/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/627/d3av0dyd/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/368/xa8i9dlm/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/015/4707cs4i/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/860/g1s2kxua/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/207/2v8xemmb/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/965/t2muzk3s/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/595/qqouxhse/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/461/uaiz_a8d/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/934/js85g87n/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/649/ip2lewqp/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/550/yaqjceqs/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/903/wfgwya6l/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/233/wsp_4pa1/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/764/g19moraq/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/622/g0xsx2au/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/329/ojb7r59v/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/374/nhekys5i/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/268/ncq47z66/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/765/9anxu27l/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/453/_n2t_wng/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/584/vpupgonb/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/859/01tdc2zg/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/411/2kr_gmqa/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/751/eslz_7xs/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/825/1fcoa10d/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 6ms 200
+GET /notf_socket/490/31616ocm/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/696/0xocj25_/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/439/h9dvk221/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/048/1z2602v3/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/314/uy7g8nb0/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/704/fto64_gc/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/030/jtu1zcr3/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/896/n_u5dm0j/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/479/s_ehmypw/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/251/m9ve_wp1/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/991/ixognukf/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/609/mz91twoi/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/532/i3fn1l9i/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/718/62m3__64/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/416/gv5ftnxq/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/557/c043ucj7/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/836/xlonl1t_/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/952/1j5gvx1e/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/640/xeliess_/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/637/7qz94h6t/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/074/jdixmp5o/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/233/y9yygkt8/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/220/ro6c722z/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/023/yajyec8f/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/934/0uyen3cf/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/info 0ms 200
+GET /notf_socket/642/pgnheb4_/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/674/q5pznmge/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/info 0ms 200
+GET /notf_socket/844/3caaq2d_/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/870/jwaq3fep/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/638/jha7bc2s/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/399/9a7hf56r/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/860/da5k9hvh/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/397/c64a1ugj/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/199/0o_8ynai/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/058/pwrwe8tu/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/433/09ejs5gc/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/331/1rrhni4o/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/619/9klq99tc/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/952/vv4y4lio/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/569/lh91bpvx/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/454/hae4a36i/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/827/rrby60k_/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/880/8itkgdup/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/833/pabdy1se/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/689/feeehcxu/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/635/ub2smj63/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/335/c2vbifmy/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/256/qz5xtlhm/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/081/29vhhlfy/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/725/y78jgezp/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/339/1eplvwnz/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/688/ajq4v3xp/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/786/3lwytnkx/websocket 1ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/670/crtfo03o/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/469/ol3yatfy/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/616/j7psfd1z/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/763/e8k6pawa/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/708/12nlcdbj/websocket 1ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/674/o8se0k2i/websocket 0ms (unfinished)
+17
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/451/ggze_b96/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/336/_a44bupn/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/674/8asj9i8w/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 2ms 200
+GET /notf_socket/938/9x795tkq/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/823/of08g_k7/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/860/wbc_8inr/websocket 0ms (unfinished)
+19
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/178/tn7vdcye/websocket 0ms (unfinished)
+19
+disconnect
+SockJS v0.3.11 bound to "/notf_socket"
+GET /notf_socket/info 2ms 200
+GET /notf_socket/319/8i68udtm/websocket 2ms (unfinished)
+16
+GET /notf_socket/info 0ms 200
+GET /notf_socket/592/s_ybvhkd/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/640/24f6o2b_/websocket 0ms (unfinished)
+16
+GET /notf_socket/info 0ms 200
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/450/d6_tb77u/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/972/a8pe06uk/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/167/oa1gb4vr/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/921/18vhq51g/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/961/9wxy7um3/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/info 0ms 200
+GET /notf_socket/292/8z3qd86h/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+disconnect
+GET /notf_socket/279/nandpwlr/websocket 0ms (unfinished)
+14
+GET /notf_socket/info 1ms 200
+disconnect
+GET /notf_socket/282/b53uhr7p/websocket 0ms (unfinished)
+16
+GET /notf_socket/info 1ms 200
+GET /notf_socket/318/00sezmya/websocket 1ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/408/3omwvq4f/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/159/kag3pwjf/websocket 0ms (unfinished)
+14
+disconnect
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/610/lz6iv503/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/122/ilefx322/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/810/goprm3r3/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 2ms 200
+GET /notf_socket/384/3jbvu8x6/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/562/vy4r834e/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/530/9v4bu7bv/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/737/c26q7w1a/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/704/blicy3jt/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/007/ns4gir_l/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/535/74iwex19/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/981/9r38sxrc/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/447/3n0h5nz_/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/584/cn2k0uad/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/175/22xhpzih/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/042/6xooxn3r/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/577/8fhmu0to/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/816/8pizuh42/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/358/9zsh217q/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/556/7cpjackt/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/039/9hrm9ofn/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/282/ewist5b4/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/448/s6iu0pw0/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/762/kbjaf20r/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/763/f2kjcf8a/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/099/auzo9lu0/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/778/0c6cvi0a/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/621/57yi7h1d/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/167/e36du7t2/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/701/bak1xvc5/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/652/dk6z_zgu/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/046/qxwsu1q9/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/417/owvuzzco/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/021/bl8bu_rm/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/296/cw1y17mr/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/148/jw166l_l/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/783/m_740vdg/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/633/ptj81r2l/websocket 0ms (unfinished)
+16
+GET /notf_socket/info 0ms 200
+GET /notf_socket/567/kosah7n_/websocket 0ms (unfinished)
+14
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/312/u__orx7c/websocket 0ms (unfinished)
+14
+disconnect
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/296/jei0l9ft/websocket 0ms (unfinished)
+16
+GET /notf_socket/info 0ms 200
+GET /notf_socket/058/wr39z17z/websocket 0ms (unfinished)
+14
+disconnect
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/661/kbckmn5w/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/786/mqt49zdc/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/574/73njoy2w/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/670/2wgutn2v/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/330/ko7ddb5n/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+POST /notf_socket/816/1hdcwp77/xhr_streaming 1ms (unfinished)
+GET /notf_socket/info 0ms 200
+POST /notf_socket/816/ubfc3dh4/xhr 1ms 200
+GET /notf_socket/731/0o85094v/websocket 0ms (unfinished)
+16
+disconnect
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/895/izdjk90h/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/028/sk8hh4c8/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/408/xtyflh6o/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/796/wc9y95v8/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/048/krw1j3jp/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/175/jrsxa5a9/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/516/mbimpjlh/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/172/jmxotk3l/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/544/mu6_hcwv/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/924/jt2vq2h1/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/782/jr53ip9t/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/909/0htgcsrs/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/160/dlrgglny/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/230/5gsgy70r/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/679/n4xj88u4/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/318/ex9yc7sg/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/055/0_tpp1cb/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/374/296h7l51/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/136/0722iaof/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/598/g6iap1p4/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/346/6z5rnvnu/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/440/kmkbza5k/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/311/ocl8fs66/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/092/8d7akkj2/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/046/bub8e_wt/websocket 1ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 0ms 200
+GET /notf_socket/649/rnmog7cq/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/517/np6_7qtx/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/352/l693_o_u/websocket 0ms (unfinished)
+16
+disconnect
+GET /notf_socket/info 1ms 200
+GET /notf_socket/326/i22tmxrc/websocket 1ms (unfinished)
+16
+
+events.js:72
+        throw er; // Unhandled 'error' event
+              ^
+Error: Redis connection to 127.0.0.1:6379 failed - connect ECONNREFUSED
+    at RedisClient.on_error (/home/bcloud/preprod/bcloud/socket/node_modules/redis/index.js:196:24)
+    at Socket.<anonymous> (/home/bcloud/preprod/bcloud/socket/node_modules/redis/index.js:106:14)
+    at Socket.emit (events.js:95:17)
+    at net.js:441:14
+    at process._tickCallback (node.js:442:13)

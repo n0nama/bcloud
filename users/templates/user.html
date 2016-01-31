@@ -1,0 +1,38 @@
+{% extends "basis.html" %}
+{% load l10n %}
+
+{% block main_content %}
+{% if user.is_authenticated %}
+<div id="page-wrapper">
+    <div class="ui vertically padded page grid">
+			{% if user.profile.filled %}
+			<div class="ui form segment row">
+				<div class="four wide center aligned column">
+
+						<img src="{{ MEDIA_URL }}{{ u.avatar }}" class="ui circular image">
+						<div class="ui tiny statistic">
+  							<div class="value">
+							<i class="trophy icon"></i> {{ u.rate|unlocalize }}
+  							</div>
+						</div>
+						<!--<input type="hidden" class="text-center rating" value="{{ user.profile.rate|unlocalize }}" readonly="readonly"/>-->
+				</div>
+				<div class="eleven wide column">
+					<h2>{{ u.f_name}} {{ u.l_name}}</h2>
+					<p><strong>Возраст: </strong>{{ u.birth_date | timesince }}</p>
+					<p><strong>Навыки: </strong>{{ u.skills }}</p>
+					<p><strong>Сайт: </strong><a href="{{ u.website }}">{{ u.website }}</a></p>
+					<p><strong>Компания: </strong>{{ u.company }}</p>
+					<p><strong>О себе: </strong><p>{{ u.about }}</p></p>
+				</div>
+				<div class="right floated one wide column"><a class="circular ui icon basic button" href="#"><i class="add user icon"></i></a></div>
+				<div class="right floated one wide column"><div class="circular ui icon basic button"><i class="browser icon"></i></div></div>
+			{% else %}
+				<p>Ваш профиль совсем пустой и не отображается в списке пользователей! Заполните его</p>
+				<a href="/edit">Edit</a>
+			{% endif %}
+			</div>
+	</div>
+</div>
+{% endif %}
+{% endblock %}

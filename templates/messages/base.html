@@ -1,0 +1,59 @@
+{% extends 'basis.html' %}
+{% load staticfiles %}
+{% load i18n %}
+{% load url from future %}
+{% block extend_header %}
+    {% block messages_extend %}{% endblock %}
+     <link rel="stylesheet" href= "{% static 'messages/base.css' %}" type="text/css" />
+{% endblock %}s
+{% block main_content %}
+    <div id="sidebar">
+        <div id="messages-send">
+            <a href="{% url 'messages_compose' %}">
+                <i class="fa fa-paper-plane-o"></i>
+                <span class="hidden-xs">Написать</span>
+            </a>
+        </div>
+        <ul id="messages-menu">
+            <li>
+                <a href="{% url 'messages_inbox' as inbox_url%}{{ inbox_url }}" class="" id="msg-inbox" {% if request.path == inbox_url %}
+                    style="background-color: #dedede"
+                {% endif %}>
+                    <span class="hidden-xs">Входящие</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'messages_outbox' as outbox_url%}{{ outbox_url }}" class="" id="msg-outbox" {% if request.path == outbox_url %}
+                    style="background-color: #dedede"
+                {% endif %}>
+                    <span class="hidden-xs">Отправленные</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'messages_favorite' as favorite_url%}{{ favorite_url }}" class="" id="msg-starred" {% if request.path == favorite_url %}
+                    style="background-color: #dedede"
+                {% endif %}>
+                    <span class="hidden-xs">Избранное</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'messages_draft' as draft_url%}{{ draft_url }}" class="" id="msg-draft" {% if request.path == draft_url %}
+                    style="background-color: #dedede"
+                {% endif %}>
+                    <span class="hidden-xs">Черновики</span>
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'messages_trash' as trash_url%}{{ trash_url }}" class="" id="msg-trash" {% if request.path == trash_url %}
+                    style="background-color: #dedede"
+                {% endif %}>
+                    <span class="hidden-xs">Корзина</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="main">
+        {% block messages_content %}
+        {% endblock %}
+    </div>
+{% endblock %}

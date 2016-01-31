@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf8">
+    <title>{% block title %}Проблема принята.{% endblock %}</title>
+</head>
+<body>
+{% block content %}
+<h2>Проблема принята.</h2>
+
+<a href='/tickets/'>Вернуться на главную</a>
+{% endblock %}
+</body>
+</html>

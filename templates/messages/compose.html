@@ -1,0 +1,82 @@
+{% extends "basis.html" %}
+{% load i18n %}
+{% load url from future %}
+{% block main_content %}
+<div id="page-wrapper">
+	<div class="content">
+		<div class="col-lg-12 pad">
+			<div class="ui fluid action input">
+				<input type="text" placeholder="Поиск...">
+				<div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+				<div class="ui icon primary button rght">Поиск <i class="search icon"></i></div>
+			</div>
+		</div>
+		{% include "messages/sb.html" %}
+		<div class="col-lg-12 mrg">
+			<div class="ui segment">
+				<form action="" method="post" enctype="multipart/form-data">
+				{% csrf_token %}
+					<div class="ui form">
+						<div class="field">
+							<label for="id_recipient">Получатель:</label>
+							<input id="id_recipient" name="recipient" type="text">
+						</div>
+						<div class="field">
+							<label for="id_subject">Тема:</label>
+							<input id="id_subject" maxlength="120" name="subject" type="text">
+						</div>
+						<div class="field">
+							<label for="id_body">Сообщение:</label>
+							<textarea cols="55" id="id_body" name="body" rows="12"></textarea>
+						</div>
+						<div class="field">
+							<label for="id_file">Файл:</label>
+							<input id="id_file" name="file" type="file">
+						</div>
+						<div class="field">
+							<label for="id_image">Изображение:</label>
+							<input id="id_image" name="image" type="file">
+						</div>
+						<input id="id_draft_id" name="draft_id" type="hidden"></td></tr>
+						<input class="ui primary button mrg rght"  type="submit" value="{% trans "Send" %}"/>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    var id='';
+    {% if id %}
+        id={{ id }};
+    {% endif %}
+    function send_to_draft(){
+        $.post(
+                '{% url 'message_draft_compose' %}',
+                {
+                    'id':id,
+                    'recipient': $('#id_recipient').val(),
+                    'subject': $('#id_subject').val(),
+                    'body': $('#id_body').val(),
+                    'csrfmiddlewaretoken': $('[name="csrfmiddlewaretoken"]').attr('value')
+                },
+                function( data ){
+                    if (!isNaN(parseInt(data))){
+                        id = parseInt(data);
+                        $('[name="draft_id"]').val(id);
+                    }
+                }
+        );
+    }
+    $(document).ready(function() {
+
+        var timer;
+
+         $("#id_body, #id_recipient, #id_subject").bind("keyup", function(){
+            clearTimeout(timer);
+            timer = setTimeout(send_to_draft, 2000)
+        });
+
+    });
+</script>
+{% endblock %}

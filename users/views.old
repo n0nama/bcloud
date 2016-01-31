@@ -1,0 +1,68 @@
+def edit(request):
+    u = User.objects.get (pk = request.user.id)
+    p = get_object_or_404 (Profile, user=request.user)
+    portfolio = Portfolio.objects.filter(user_id=request.user.id)
+    if request.method == 'POST':
+        if 'profile_form' in request.POST:
+            dt = 0
+            profile_form = ProfileForm(request.POST)
+            port_form = PortfolioForm()
+            if profile_form.is_valid():
+                profile = profile_form.save(commit=False)
+                if request.POST.get('u_avatar'):
+                    dt = 1
+                    sp = os.path.join(settings.MEDIA_ROOT, 'avatars', u.username + "_avatar.jpg")
+                    dataUrlPattern = re.compile('data:image/(png|jpeg);base64,(.*)$')
+                    ImageData = request.POST.get('u_avatar')
+                    ImageData = dataUrlPattern.match(ImageData).group(2)
+                    ImageData = base64.b64decode(ImageData)
+                    ava = tempfile.TemporaryFile()
+                    av = File(ava)
+                    av.write(ImageData)
+                    av.name = u.username + "_avatar.jpg"
+                    profile.avatar = av
+                else:
+                    profile.avatar = p.avatar
+                profile.user = request.user
+                profile.filled = True
+                profile.birth_date = request.POST.get('bd_year') + "-" + request.POST.get('bd_month') + "-" + request.POST.get('bd_day')
+                if p.rate < 0.5:
+                    profile.rate = 0.5
+                else:
+                    profile.rate = p.rate
+                profile.save()
+                ts = request.POST.get('skills')
+                tags = ts.split(',')
+                for tag in tags:
+                    ct = Skills.objects.filter(tags=tag)
+                    if not ct:
+                        t = Skills(tags = tag)
+                        t.save()
+                    else:
+                        pass
+                if dt == 1:
+                    ava.close()
+                return HttpResponseRedirect('profile')
+        elif 'port_form' in request.POST:
+            port_form = PortfolioForm(request.POST, request.FILES)
+            profile_form = ProfileForm()
+            if port_form.is_valid():
+                port = port_form.save(commit = False)
+                port.user = u
+                port.save()
+                return HttpResponseRedirect('edit')
+        else: 
+            pass
+    else:
+        port_form = PortfolioForm()
+        profile_form = ProfileForm()
+    return render(request, 'profile_edit.html', {'profile_form' : profile_form, 'port_form' : port_form, 'portfolio' : portfolio, })
+    
+def user(request, uname):
+    uid = User.objects.get(username=uname).pk
+    u = get_object_or_404(Profile, user_id=uid)
+    return render_to_response('user.html', {'u': u}, context_instance=RequestContext(request))
+    
+def users(request):
+    us = Profile.objects.all()
+    return render_to_response('users.html', {'us': us}, context_instance=RequestContext(request))

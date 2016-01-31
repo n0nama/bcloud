@@ -1,0 +1,14 @@
+{% extends "basis.html" %}
+{% block main_content %}
+    {% if me.is_authenticated %}
+        <table align='center'>
+            <form action={% url 'projects:addReqSkill'%} method='post', enctype='multipart/form-data'>
+                {% csrf_token %}
+                {{ skill_req_form.as_table }}
+                <tr><td><input type='submit' name='submit' value='Добавить навык'></td></tr>
+            </form>
+        </table>
+        
+    {% endif %}
+{% endblock %}
+</html>

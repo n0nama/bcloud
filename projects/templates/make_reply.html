@@ -1,0 +1,19 @@
+{% extends "basis.html" %}
+<html>
+<head>
+    <meta charset="utf8">
+    {% block title %}Подать заявку на проект {{ project.title }}{% endblock %}
+</head>
+{% block main_content %}
+    <table align="center">
+        <table align='center'>
+            <form action={% url 'projects:make_reply' project.project_id %} method='post', enctype='multipart/form-data'>
+                {% csrf_token %}
+                {{ performers_reply_form.as_table }}
+                <tr><td><input type='submit' name='submit' value='Откликнуться'></td></tr>
+            </form>
+        </table>
+        
+    </table>
+{% endblock %}
+</html>

@@ -1,0 +1,36 @@
+{% extends "basis.html" %}
+{% load url from future %}
+{% block main_content%}
+{% if user.is_authenticated %}
+
+<div id="page-wrapper">
+{% if not to_username == request.user.username %}
+    {% if errors %}<p>{{ errors|join:", " }}</p>{% endif %}
+    <div class="col-md-3 col-lg-3 col-sm-4 col-lg-offset-4 mrg">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-12 text-center">
+                    <img src="{{ MEDIA_URL }}{{ usr.profile.avatar.url }}" class="img-circle">
+                    <hr class="mrg">
+                </div>
+                <div class="col-xs-12 text-center mrg">
+                    <a href="/users/{{ usr.username }}">
+                    {{ usr.profile.f_name }}<br>
+                    {{ usr.profile.l_name }}
+                    </a>
+                </div>
+                <div class="col-xs-12 text-center mrg">
+                    <form method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="to_username" value="{{ to_username }}" />
+                        <input type="submit" class="btn btn-info" value="Добавить в друзья" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endif %}
+{% endif %}
+</div>
+{% endblock %}

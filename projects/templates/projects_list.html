@@ -1,0 +1,51 @@
+{% extends "basis.html" %}
+{% block title %}Проекты{% endblock %}
+
+{% block main_content %}
+<div id="page-wrapper">
+	<div class="content">
+		<div class="col-lg-12 pad">
+			<div class="ui fluid action input">
+				<input type="text" placeholder="Поиск...">
+				<div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+				<div class="ui icon primary button rght">Поиск <i class="search icon"></i></div>
+			</div>
+		</div>
+		<div class="col-lg-12 mrg">
+			<div class="ui large secondary menu">
+				<div class="item"><a class="ui primary button" href={% url 'projects:createProject' %}>Создать проект</a></div>
+				<a href={% url 'projects:all_projects'%} class="active item">
+					Все проекты
+				</a>
+				<a href={% url 'projects:my_projects'%} class="item">
+					Мои проекты
+				</a>
+				<a class="item">
+					Лента коллег
+				</a>
+				<a class="item">
+					Биржа
+				</a>
+			</div>
+		</div>
+        	{% if projects %}
+            	{% for project in projects%}
+			<div class="col-lg-12 mrg">
+				<h3 class="ui top attached header">
+					<a href = {% url 'projects:getProject' project.project_id %}>{{ project.title }}</a>
+					<p class="rght">
+						{{ project.pub_date|date:"d.m.Y" }}
+					</p>
+				</h3>
+				<div class="ui green attached segment">
+                	{{ project.author.profile.f_name }} {{ project.author.profile.l_name }}
+				</div>
+			</div>
+		{% endfor %}
+        	{% else %}
+            	Нет открытых проектов
+        	{% endif %}
+	</div>
+	</div>
+</div>
+{% endblock %}

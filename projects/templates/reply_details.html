@@ -1,0 +1,16 @@
+{% extends "basis.html" %}
+<html>
+<head>
+    <meta charset="utf8">
+    {% block title %}<title>Отклик </title>{% endblock %}
+</head>
+{% block main_content %}
+    <table align="center">
+        <tr><td>Автор:</td><td><a href={% url 'user' reply.author %}> {{ reply.author }}</td></tr></a>
+        <tr><td>Комментарий:</td><td> {{ reply.text }}</td></tr>
+        <tr><td>Дата: </td><td>{{ reply.pub_date }}</td></tr>
+        
+    </table>
+   
+{% endblock %}
+</html>

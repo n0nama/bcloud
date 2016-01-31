@@ -1,0 +1,91 @@
+{% extends "basis.html" %}
+<head>
+    <meta charset="utf8">
+    {% block title %}Создать проект{% endblock %}
+</head>
+{% block main_content %}
+	<div id="page-wrapper">
+	<div class="content">
+		<div class="col-lg-12 pad">
+			<div class="ui fluid action input">
+				<input type="text" placeholder="Поиск...">
+				<div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+				<div class="ui icon primary button rght">Поиск <i class="search icon"></i></div>
+			</div>
+		</div>
+		<div class="col-lg-12 mrg">
+			<div class="ui large secondary menu">
+				<div class="item"><a class="ui primary button" href={% url 'projects:createProject' %}>Создать проект</a></div>
+				<a class="active item">
+					Все проекты
+				</a>
+				<a class="item">
+					Мои проекты
+				</a>
+				<a class="item">
+					Лента коллег
+				</a>
+				<a class="item">
+					Биржа
+				</a>
+			</div>
+		</div>
+    <div class="col-lg-12 mrg">
+		<div class="ui segment">
+		<form action="/projects/create_project/" method="post" ,="" enctype="multipart/form-data">
+			{% csrf_token %}
+			<div class="ui form">
+				<div class="field">
+					<label for="id_title">Название:</label>
+					<input id="id_title" maxlength="128" name="title" type="text">
+				</div>
+				<div class="field">
+					<label for="id_description">Описание:</label>
+					<textarea cols="40" id="id_description" name="description" rows="10" style="margin: 0px; height: 241px; width: 840px;"></textarea>
+				</div>
+				<div class="field">
+					<label for="id_privacy_type">Тип:</label>
+					<select id="id_privacy_type" name="privacy_type">
+						<option value="" selected="selected">---------</option>
+						<option value="PU">Общий</option>
+						<option value="PR">Персональный</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="id_skill_req">Требуемые навыки:</label> 
+					<select multiple="multiple" id="id_skill_req" name="skill_req">
+						<option value="1">python</option>
+						<option value="2">django</option>
+						<option value="3">php</option>
+						<option value="4">perl</option>
+						<option value="5">SQL</option>
+						<option value="7">html</option>
+						<option value="8">CSS</option>
+						<option value="9">JavaScript</option>
+						<option value="10">Java</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="id_deadline">Срок сдачи:</label>
+					<input id="id_deadline" name="deadline" type="date">
+				</div>
+				<div class="field">
+					<label for="id_compensation_type">Тип компенсации:</label>
+					<select id="id_compensation_type" name="compensation_type">
+						<option value="" selected="selected">---------</option>
+						<option value="D">Договорная</option>
+						<option value="A">Предусмотрен аванс</option>
+						<option value="F">Оплата по факту</option>
+					</select>
+				</div>
+				<div class="field">
+					<label for="id_compensation">Уровень компенсации:</label>
+					<input id="id_compensation" name="compensation" step="0.01" type="number">
+				</div>
+			<input class="ui primary button rght mrg" type="submit" name="submit" value="Опубликовать">
+        </form>
+		</div>
+	</div>
+</div>
+</div>
+{% endblock %}

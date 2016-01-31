@@ -1,0 +1,164 @@
+{% extends "basis.html" %}
+<html>
+<head>
+    <meta charset="utf8">
+    {% block title %}{{ project.title }}{% endblock %}
+</head>
+{% block main_content %}
+	<div id="page-wrapper">
+	<div class="content">
+		<div class="col-lg-12 pad">
+			<div class="ui fluid action input">
+				<input type="text" placeholder="Поиск...">
+				<div class="ui icon dropdown button rght brless"><i class="filter icon"></i></div>
+				<div class="ui icon primary button rght">Поиск <i class="search icon"></i></div>
+			</div>
+		</div>
+		<div class="col-lg-12 mrg">
+			<div class="ui large secondary menu">
+				<div class="item"><a class="ui primary button" href={% url 'projects:createProject' %}>Создать проект</a></div>
+				<a class="active item">
+					Все проекты
+				</a>
+				<a class="item">
+					Мои проекты
+				</a>
+				<a class="item">
+					Лента коллег
+				</a>
+				<a class="item">
+					Биржа
+				</a>
+			</div>
+		</div>
+    <div class="col-lg-12 mrg">
+		<h3 class="ui top attached header">
+  			{{ project.title|truncatechars:30 }}
+			{% if is_mine %}
+				<a href={% url 'projects:editProject' project.project_id %}><i class="small bordered edit icon mbless"></i></a>
+				<a href="#"><i class="small bordered orange angle double right icon mbless"></i></a>
+				<a href="#"><i class="small bordered red remove icon mbless"></i></a>
+    		{% endif %}
+			<div class="rght">
+				{{ project.pub_date|date:"d.m.Y" }}
+			</div>
+		</h3>
+		<div class="ui attached green segment">
+		<div class="col-lg-6">
+			<div class="col-lg-12 padless">
+				<div class="col-lg-6 padless">
+					Автор:
+				</div>
+				<div class="col-lg-6 padless">
+					{{ project.author.profile.f_name }} {{ project.author.profile.l_name }}</td></tr>
+				</div>
+			</div>
+			<div class="col-lg-12 padless">
+				{% if skills %}
+				<div class="col-lg-6 padless">
+            		Требуемые навыки:
+				</div>
+				<div class="col-lg-6 padless">
+            	{% for skill in skills %}
+                	{{ skill }}
+            	{% endfor %}
+				</div>
+        		{% endif %}
+			</div>
+		</div>
+		<div class="col-lg-6">
+			<div class="col-lg-12 padless">
+				<div class="col-lg-6 padless">
+					Дата окончания проекта:
+				</div>
+				<div class="col-lg-6 padless">
+					{{ project.deadline|date:"d.m.Y" }}
+				</div>
+			</div>
+			<div class="col-lg-12 padless">
+				<div class="col-lg-6 padless">
+					Компенсация:
+				</div>
+				<div class="col-lg-6 padless">
+					{{ project.compensation|floatformat }}
+				</div>
+			</div>
+			<div class="col-lg-12 padless">
+				<div class="col-lg-6 padless">
+					Тип оплаты:
+				</div>
+				<div class="col-lg-6 padless">
+					{{ project.get_compensation_type_display }}
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12 ui divider"></div>
+		<div class="col-lg-12">
+			{{ project.description }}
+		</div>
+		<div class="col-lg-12 ui horizontal divider">
+    		Откликов: {{ replies.count }}
+  		</div>
+		</div>
+	</div>
+	{% if not is_mine %}
+	<div class="col-lg-12 mrg">
+		<h3 class="ui top attached header">
+  			Откликнуться
+		</h3>
+		<div class="ui attached segment">
+			<div class="col-lg-12 padless ui form">
+				<div class="field">
+					<textarea></textarea>
+				</div>
+			</div>
+			<div class="col-lg-12 padless mrg">
+				<a class="ui primary button rght" href={% url 'projects:make_reply' project.project_id %}>Отправить</a>
+			</div>
+		</div>
+	</div>
+	{% else %}
+    	{% if replies %}
+			<div class="col-lg-12 mrg">
+        	{% for reply in replies %}
+            	<h3 class="ui top attached header">
+  					{{ reply.author }}
+					{% if is_mine %}
+						<a href="#"><i class="small bordered add user icon mbless"></i></a>
+						<a href="#"><i class="small bordered orange envelope icon mbless"></i></a>
+						<a href="#"><i class="small bordered red remove icon mbless"></i></a>
+					{% endif %}
+					<div class="rght">
+						{{ reply.pub_date|date:"d.m.Y" }}
+					</div>
+				</h3>
+				<div class="ui attached segment">
+					{{ reply.text }}
+				</div>
+            <!--<td><a href={% url 'projects:replyDetails' project.project_id reply.id %}> {{reply.author }}</a></td></tr>-->
+        	{% endfor %}
+			</div>
+    	{% endif %}
+	{% endif %}
+{% endblock %}
+</div>
+</div>
+<!--
+        <tr><td>Название:</td><td> {{project.title}}</td></tr>
+        <tr><td>Описание: 
+        
+        <tr><td>Дата публикации: </td><td>{{ project.pub_date }}</td></tr>
+        
+        <tr><td>Статус:</td><td> {{ project.get_status_display }}</td></tr>
+        <tr><td>Прогресс:</td><td> {{ project.progress }}</td></tr>
+        
+        
+        {% if performers %}
+            <tr><td>Исполнители:</td>
+            {% for performer in performers %}
+                <tr><td></td>
+                <td> {{ performer }}</td></tr>
+            {% endfor %}</tr>
+        {% endif %}
+-->
+</html>

@@ -1,0 +1,19 @@
+{% load js %}
+<script type="text/javascript">
+    {% for m in messages %}
+        receive_message({{  m.get_date | js }}, {{ m.text | js }},
+                        {{ m.sender.user.username | js }}, {{ m.get_fname | js }});
+    {% endfor %}
+    last = '';
+    var sockjs = new SockJS('http://108.61.199.8:5000/chat_socket');
+    sockjs.onopen    = function()  {console.log('Socket connected')};
+    sockjs.onmessage = function(message) {var m= JSON.parse(message.data);
+                                          receive_message(m.date, m.text, m.sender, m.name);
+                                          var elem = document.getElementById('chat-history');
+                                          elem.scrollTop = elem.scrollHeight;
+                                         };
+    sockjs.onclose   = function()  {console.log('Closing Connection.')};
+    var send_data = {'id': '{{ id }}', 'auth_key': '{{ key }}'};
+    setTimeout(function(){
+        sockjs.send(JSON.stringify(send_data))}, 700);
+</script>

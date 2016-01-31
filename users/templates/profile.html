@@ -1,0 +1,58 @@
+{% extends "basis.html" %}
+{% load l10n %}
+{%block title%}Профиль{%endblock%}
+{% block extend_header %}
+{% endblock %}
+{% block main_content %}
+<div id="page-wrapper">
+	<div id="content">
+	</div>
+</div>
+{% endblock %}
+{% block scripts %}
+<link href="/static/css/lightslider.min.css" rel="stylesheet">
+<link href="/static/css/lightgallery.min.css" rel="stylesheet">
+<script type="text/javascript" src="/static/js/lightslider.min.js"></script>
+<script type="text/javascript" src="/static/js/lightgallery-all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/0.13.3/ReactRouter.js"></script>
+<script type="text/jsx" src="/static/app/user.jsx"></script>
+<script type="text/javascript" src="/static/js/avacrop.js"></script>
+{% endblock %}
+
+
+
+<!--
+<div id="page-wrapper">
+    <div class="ui vertically padded page grid">
+			{% if user.profile.filled %}
+			<div class="ui form segment row">
+				<div class="four wide center aligned column">
+						<img src="{{ MEDIA_URL }}{{ request.user.profile.avatar.url }}" class="ui centered circular image">
+						<div class="ui tiny statistic">
+  							<div class="value">
+							<i class="trophy icon"></i> {{ user.profile.rate|unlocalize }}
+  							</div>
+						</div>
+						<!--<input type="hidden" class="text-center rating" value="{{ user.profile.rate|unlocalize }}" readonly="readonly"/>
+				</div>
+				<div class="ten wide column">
+					<h2>{{ user.profile.f_name}} {{ user.profile.l_name}}</h2>
+					<p><strong>Возраст: </strong>26</p>
+					{% for skill in user.profile.skills.all %}
+						<p><strong>Навыки: </strong>{{ skill }}</p>
+					{% endfor %}
+					<p><strong>Сайт: </strong><a href="{{ user.profile.website }}">{{ user.profile.website }}</a></p>
+					<p><strong>Компания: </strong>{{ user.profile.company }}</p>
+					<p><strong>О себе: </strong><p>{{ user.profile.about }}</p></p>
+				</div>
+				<div class="right floated right aligned two wide column"><a class="circular ui icon basic button" href="/edit"><i class="edit icon"></i></a></div>
+				<div class="right floated right aligned two wide column"><div class="circular ui icon basic button"><i class="browser icon"></i></div></div>
+			{% else %}
+				<p>Ваш профиль совсем пустой и не отображается в списке пользователей! Заполните его</p>
+				<a href="/edit">Edit</a>
+			{% endif %}
+			</div>
+	</div>
+</div>
+
+-->

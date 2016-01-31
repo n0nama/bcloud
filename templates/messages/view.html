@@ -1,0 +1,37 @@
+{% extends "basis.html" %}
+{% load i18n %}
+{% load url from future %}
+
+{% block main_content %}
+    <div id="page-wrapper">
+        <div class="content">
+            <div class="col-lg-12 pad">
+                <h1>{% trans "View Message" %}</h1>
+                <dl class="message-headers">
+                    <dt>{% trans "Subject" %}</dt>
+                    <dd><strong>{{ message.subject }}</strong></dd>
+                    <dt>{% trans "Sender" %}</dt>
+                    <dd>{{ message.sender }}</dd>
+                    <dt>{% trans "Date" %} </dt>
+                    <dd>{{ message.sent_at|date:_("DATETIME_FORMAT")}}</dd>
+                    <dt>{% trans "Recipient" %}</dt>
+                    <dd>{{ message.recipient }}</dd>
+                    {% if message.file.name %}
+                    <dt>{% trans "File" %}</dt>
+                    <dd><a href="{{ message.file.url }}">{{ message.filename }}</a></dd>
+                    {% endif %}
+                    {% if message.image.name %}
+                    <dt>{% trans "Image" %}</dt>
+                    <dd><img src="{{ message.image.url }}"></dd>
+                    {% endif %}
+                </dl>
+                {{ message.body|linebreaksbr }}<br /><br />
+
+                {% ifequal message.recipient.pk user.pk %}
+                <a href="{% url 'messages_reply' message.id %}">{% trans "Reply" %}</a>
+                {% endifequal %}
+                <a href="{% url 'messages_delete' message.id %}">{% trans "Delete" %}</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
